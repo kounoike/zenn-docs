@@ -14,7 +14,8 @@ jobs:
         with:
           node-version: '15'
       - name: textlint-github
-        uses: kounoike/action-textlint@run-on-image-textlint
+        # uses: kounoike/action-textlint@run-on-image-textlint
+        uses: kounoike/action-textlint@debug
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
